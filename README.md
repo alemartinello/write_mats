@@ -7,7 +7,7 @@ This repository contains not only ``write_mats.ado``, but also a few examples in
 
 For example, often we need to create a table when only one coefficient from a particular regression is of interest, and we want to combine estimated effects from multiple outcomes or specifications such as this.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Table with multiple specifications")
+![alt text](https://github.com/alemartinello/write_mats/images/table_multiple_specs.png "Table with multiple specifications")
 
 Alternatively
 
