@@ -1,0 +1,61 @@
+\documentclass{article}
+% NICE TABLES
+\usepackage{tabularx, multirow, booktabs}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\usepackage[unicode=true,pdfusetitle,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]
+ {hyperref}
+\hypersetup{
+ allcolors = blue}
+
+\begin{document}
+
+
+\begin{table}
+	\caption{Table of simulated data, no stars}
+	\scriptsize
+	\begin{tabularx}{\linewidth}{lYYYYYY}
+	\toprule\toprule \\
+	& \multicolumn{3}{c}{OLS} &  \multicolumn{3}{c}{IV} \\
+	\cmidrule(lr){2-4} \cmidrule(lr){5-7}\\
+	\input{tabs/example_nostar}
+	[0.5em]
+	Some controls & & X & X & & X & X \\
+	Other controls & &  & X & &  & X \\
+	\bottomrule \\
+	\end{tabularx}
+	{\sc Note.} Something something
+\end{table}
+
+\begin{table}
+	\caption{Table of simulated data, with stars}
+	\scriptsize
+	\begin{tabularx}{\linewidth}{lYYYYYY}
+	\toprule\toprule \\
+	& \multicolumn{3}{c}{OLS} &  \multicolumn{3}{c}{IV} \\
+	\cmidrule(lr){2-4} \cmidrule(lr){5-7}\\
+	\input{tabs/example_withstar}
+	[0.5em]
+	Some controls & & X & X & & X & X \\
+	Other controls & &  & X & &  & X \\
+	\bottomrule \\
+	\end{tabularx}
+	{\sc Note.} $^{**}$ $p<0.01$; $^{*}$ $p<0.05$; $^{+}$ $p<0.1$;
+\end{table}
+
+\begin{table}
+	\caption{Example from \href{https://swopec.hhs.se/lunewp/abs/lunewp2016_007.htm}{Druedahl and Martinello (2016)}}
+	\scriptsize
+	\begin{tabularx}{\linewidth}{lYYYYY}
+	\toprule\toprule \\
+	& Test of pre-trends & \multicolumn{4}{c}{Dynamic effects around parental death} \\
+	\cmidrule(lr){2-2} \cmidrule(lr){3-6} \\
+	Years from shock& & $-2$ &$1$ &$5$ &$9$ \\
+	\midrule\\
+	\input{tabs/druedahl_martinello_nostar}
+	\bottomrule \\
+	\end{tabularx}
+	{\sc Note.} The first column reports the F-statistic of a test for equality to zero of the estimated effect of inheritance before parental death (p-value in parentheses). The remaining columns report the dynamic effect of inheritance at selected years from parental death.
+\end{table}
+
+\end{document}
