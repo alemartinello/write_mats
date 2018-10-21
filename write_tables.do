@@ -1,6 +1,6 @@
-clear all
+*clear all
 cd "D:\Dropbox\Stata\utilities\write_mats_example" // or whatever directory
-program drop _all
+
 adopath ++ myados //adds folder ./myados to adopath so that stata reads write_mats.ado
 
 /* 
