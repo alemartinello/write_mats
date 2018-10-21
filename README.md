@@ -29,4 +29,8 @@ In this repository I uploaded a few files and examples you might find useful if 
 
 **run_regressions.do:** This file simulates a very simple dataset, runs some OLS and IV regressions on it, and saves the regression results into the estimates/sim folder
 
-**write_tables.do:** This file loads and compiles the regression results into matrixed, calls ``write_mats`` and exports the tables in ``.tex`` format. In the repo you can also find some estimates that [Jeppe Druedahl](http://web.econ.ku.dk/druedahl/) and I use in our joint paper, [Long-Run Saving Dynamics: Evidence from Unexpected Inheritances](https://swopec.hhs.se/lunewp/abs/lunewp2016_007.htm) (a cool paper, check it out!). Note that
+**write_tables.do:** This file loads and compiles the regression results into matrixed, calls ``write_mats`` and exports the tables in ``.tex`` format. In the repo you can also find some estimates that [Jeppe Druedahl](http://web.econ.ku.dk/druedahl/) and I use in our joint paper, [Long-Run Saving Dynamics: Evidence from Unexpected Inheritances](https://swopec.hhs.se/lunewp/abs/lunewp2016_007.htm) (a cool paper, check it out!). Note that you can run this file on the same stata session as the first one - it does not load, create or use any variable in memory.
+
+**compile_tables.tex:** This file creates the skeleton of a latex document, which points at the .tex files exported by ``write_tables.do``. 
+
+Want to see the advantage of this workflow? Try re-running all three files one after the other. I did not specify a seed in ``run_regressions.do``, so you'll get different results every time. A little like when you figure out a few months from your PhD defense that you made a typo in your data building and now a fifth of your sample is gone (ehrm).  Yet, all it's needed to update the tables in your paper is a sequence of two CTRL+R and a CTRL+B - or however you compile .tex files :-) 
