@@ -25,7 +25,7 @@ This type of workflow consists of essentially three **separate** steps.
 2. Turn regressions into *matrixes* and feed these matrixes to write_mats.ado
 3. Prepare the skeleton of tables in latex, and point the file to the location where you are saving the final tables
 
-In this repository I uploaded a few files and examples you might find useful if you want to replicate (part of) this workflow. Specifically:
+Other than ``myados/write_mats.ado``, in this repository I uploaded a few files and examples you might find useful if you want to replicate (part of) this workflow. Specifically:
 
 **run_regressions.do:** This file simulates a very simple dataset, runs some OLS and IV regressions on it, and saves the regression results into the estimates/sim folder
 
