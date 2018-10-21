@@ -13,11 +13,11 @@ Alternatively, we might want to add the results of tests in a specific a column,
 
 ![alt text](https://github.com/alemartinello/write_mats/blob/master/images/table_with_test.PNG "Table with multiple specifications")
 
-All these tables can be donw with standard stata tools, but they require some workarounds. I personally like to work with ``write_mats`` as it offers a few advantages
+All these tables can be created with standard stata tools, but they require some workarounds. I personally like to work with ``write_mats`` as it offers a few advantages
 
-1. **Separating the estimation and table creation process:** Using this approach requires saving regression estimates on the disk as ``.ster`` files. Especially when working on large dataset, this has been a game-changer for me, as it allowed me to add coefficients or modify the layout of the table without having to re-run all your estimates.
+1. **Separating the estimation and table creation process:** Using this approach requires saving regression estimates on the disk as ``.ster`` files. Especially when working on large dataset, this has been a game-changer for me, as it allowed me to add coefficients or modify the layout of the table without having to re-run all regressions.
 
-2. **Structured workflow:** I personally dislike if code outputs also the ``\begin{tabular}`` part of the latex table, headings, and other unnecessary stuff. Some journals might require you to change it manually, and anyway I much prefer using ``tabularx`` if given a choice. Moreover, even for drafts, I like to have my tables looking decently, but I definitely do not want to spend time on them every time I change my specifications a tiny bit, or when I want to add an outcome variable. I want stata to spit out files that latex can read without any manual tinkering.
+2. **Structured workflow:** I personally dislike if code outputs also the ``\begin{tabular}`` part of the latex table, headings, and other unnecessary stuff. Some journals might require you to change it manually, and anyway I much prefer using ``tabularx`` if given a choice. Moreover, even for drafts, I like to have my tables looking nice, but I definitely do not want to spend time on them every time I change my specifications a tiny bit, or when I want to add an outcome variable. I want stata to spit out files that latex can read without any manual tinkering.
     * Bonus: Having a structured workflow makes it way easier to go back to the code of a paper after months of waiting for referee reports...
 
 This type of workflow consists of essentially three **separate** steps.
