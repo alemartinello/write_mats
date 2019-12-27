@@ -1,7 +1,5 @@
-***Page under development***
-
 # write_mats.ado 
-## Another solution to export stata tables into Latex
+## (Yet) another solution to export stata tables into Latex
 
 This repository contains not only ``write_mats.ado``, but also a few examples in stata and latex showing how I tipically use this utility. This utility is not a substitute for tools like estout/esttab, but I find it useful in my workflow and for whenever I need to create a non-standard table. 
 
